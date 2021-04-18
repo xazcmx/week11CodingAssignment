@@ -1,0 +1,65 @@
+:root {
+    --box-size:150px;
+}
+body {
+    margin: 0;
+    background-color: rgb(76, 107, 107);
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+
+  }
+.board {
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    font-size: 120px;
+}
+.box {
+    width: var(--box-size);
+    height: var(--box-size);
+    border: 2px solid black;
+    cursor: crosshair;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#clearButton{
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.winningMessage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+    flex-direction: column;
+}
+
+.winningMessage.show{
+    display: flex;
+}

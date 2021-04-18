@@ -1,0 +1,48 @@
+<!-- 1.	Using any of the tools you’ve worked with so far, create a game of tic-tac-toe.
+a.	A heading should say whether it is X’s or O’s turn and change with each move made.
+b.	Create a tic-tac-toe grid using your HTML element of choice. When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
+c.	A button should be available to clear the grid and restart the game.
+d.	When a player has won, or the board is full and the game results in a draw, a Bootstrap banner should appear across the screen announcing the winner. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body class="container">
+
+    <h1 class="container" id="trackingText"></h1>
+
+    <div class="board container" id="board">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>        
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>       
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div><br>
+        <button class="btn btn-secondary container column mt-5" id="clearButton1">Clear</button>      
+    </div>
+
+    <div class="winningMessage" id="winningMessage">
+        <div data-winning-message></div>
+        <button class="btn btn-secondary container column mt-5" id="clearButton2">Restart</button>      
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
